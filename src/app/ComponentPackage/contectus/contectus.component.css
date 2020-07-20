@@ -1,0 +1,176 @@
+.contactSection {
+    background: #282828;
+}
+
+.contactUS .rightSide {
+    width: 50%;
+}
+
+.contactUS .leftside {
+    width: 50%;
+}
+
+.contactUS .heading2 h2 {
+    color: #ffffff;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 3.8em;
+    font-weight: 800;
+    line-height: 0.8em;
+}
+
+.contactUS .iconwithText .icon i {
+    font-size: 15px;
+    padding: 16px;
+    background-color: #009FE3;
+    margin-right: 15px;
+    color: #ffffff;
+}
+
+.contactUS .iconwithText .icon i.phone {
+    padding: 18px;
+}
+
+.contactUS .iconwithText .icon i.maker {
+    padding: 18px;
+    font-size: 20px;
+}
+
+.contactUS .iconwithText .text h3 {
+    color: #ffffff;
+    font-family: "Nunito", Sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.contactUS .iconwithText .text p {
+    color: #ffffff;
+}
+
+.contactUS .line {
+    width: 45px;
+    background: #009fe3;
+    height: 3px;
+}
+
+.contactUS .contactText {
+    color: #ffffff;
+    font-family: "Nunito", Sans-serif;
+    font-size: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.contactUS .customForm .customFormControl {
+    background-color: rgba(247, 247, 247, 0.13);
+    border-color: rgba(255, 255, 255, 0.17);
+    border-radius: 0px 0px 0px 0px;
+    height: 50px;
+    color: #7a7a7a;
+    resize: unset;
+}
+
+.contactUS .customForm .customFormControl:focus {
+    outline: unset;
+    box-shadow: unset;
+}
+
+.contactUS .customForm .sendButton {
+    background-color: #009FE3;
+    color: #ffffff;
+    font-family: "Nunito", Sans-serif;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #009FE3;
+    border-radius: 0px 0px 0px 0px;
+    height: 47px;
+}
+
+.contactUS .customForm .sendButton:hover {
+    background-color: rgba(33, 33, 33, 0);
+    color: #009FE3;
+    border-color: #009FE3;
+}
+
+.contactUS .socialIcon a {
+    background-color: rgba(255, 255, 255, 0.11);
+    font-size: 18px;
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin-right: 8px;
+    position: relative;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.contactUS .socialIcon a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.errorMessage {
+    color: red;
+}
+
+.contactUS .socialIcon a:hover {
+    background-color: #FFFFFF;
+    color: #009FE3;
+}
+
+@media (max-width: 767px) {
+    .contactUS {
+        flex-flow: column;
+    }
+    .contactUS .rightSide {
+        width: 100%;
+    }
+    .contactUS .leftside {
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .contactUS .leftside form {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .contactUS .topheading1 {
+        flex-flow: column;
+        justify-content: center;
+    }
+    .contactUS .line {
+        width: 95%;
+        height: 4px;
+    }
+    .contactUS .heading2 h2 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+    .contactUS .iconwithText {
+        flex-flow: column;
+        justify-content: center;
+        padding: 22px 10px !important;
+    }
+    .contactUS .iconwithText .icon {
+        text-align: center;
+    }
+    .contactUS .iconwithText .text h3 {
+        text-align: center;
+        padding-top: 17px;
+    }
+    .contactUS .iconwithText .text p {
+        text-align: center;
+        color: #ffffff;
+    }
+    .contactUS .iconwithText .icon i {
+        margin-right: unset;
+    }
+}
+
+@media (max-width: 565px) {
+    .contactUS .leftside form {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

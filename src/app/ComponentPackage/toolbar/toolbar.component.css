@@ -1,0 +1,68 @@
+@keyframes elementor-animation-pop {
+    50% {
+        transform: scale(1.2)
+    }
+}
+
+.toolbar {
+    background: #000000;
+}
+
+.toolbar .showtext p {
+    font-size: 12px;
+    letter-spacing: 0.7px;
+}
+
+.toolbar .showtext i {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.toolbar .socialIcon li {
+    list-style: none;
+}
+
+.toolbar .socialIcon li a {
+    height: 33px;
+    margin-left: 11px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: .5em;
+    width: 33px;
+    display: inline-block;
+    position: relative;
+}
+
+.toolbar .socialIcon li:first-child a {
+    margin-left: unset;
+}
+
+.toolbar .socialIcon li a i {
+    font-size: 14px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.toolbar .socialIcon li:hover a {
+    background: #009FE3;
+    animation-name: elementor-animation-pop;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1
+}
+
+@media (max-width: 991px) {
+    .toolbar {
+        padding: 25px 20px;
+        height: 95px;
+    }
+}
+
+@media (max-width: 767px) {
+    .toolbar {
+        display: none;
+    }
+}
