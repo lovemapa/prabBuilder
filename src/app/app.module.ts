@@ -56,7 +56,7 @@ import { NgxSpinnerModule } from "ngx-spinner";
   providers: [
     { provide: AosToken, useValue: aos },
     // HashLocationStrategy,
-    // { provide: LocationStrategy, useClass: HashLocationStrategy },
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
   ],
   bootstrap: [AppComponent]
 })
