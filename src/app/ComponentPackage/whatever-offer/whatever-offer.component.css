@@ -405,6 +405,11 @@
     .whatweOfferSection .productCounts .bottomcardwapper .customCard p {
         padding: 17px 13px;
     }
+    .visionValues {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 565px) {
@@ -424,6 +429,11 @@
     }
     .whatweOfferSection .productCounts .bottomcardwapper .customCard span {
         font-size: 36px;
+    }
+    .visionValues {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        overflow: hidden;
     }
 }
 

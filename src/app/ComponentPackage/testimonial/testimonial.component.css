@@ -55,7 +55,7 @@
 
 @media (max-width: 767px) {
     .testimonialbackground .testimonials {
-        max-width: 100%;
+        max-width: 60%;
     }
 }
 
