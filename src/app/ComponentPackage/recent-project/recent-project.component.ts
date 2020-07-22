@@ -19,15 +19,13 @@ export class RecentProjectComponent implements OnInit {
 
   getImages(){
     this.projectImages.push(
-    'image1',
-    'image2',
-    'image3',
-    'image4',
-    'image5',
-    'image6',
-    'image7',
-    'image8',
-    'image9',
+    'image1.jpg',
+    'image2.jpg',
+    'image3.jpg',
+    'image4.jpg',
+    'image5.jpg',
+    'image6.jpg',
+    'lastimage.JPG'
     )
   }
 

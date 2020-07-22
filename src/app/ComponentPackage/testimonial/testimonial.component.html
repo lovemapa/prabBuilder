@@ -4,7 +4,7 @@
             <h1 class="topheading mb-0">Testimonials</h1>
             <div class="bottomLine"></div>
         </div>
-        <ngb-carousel *ngIf="images">
+        <!-- <ngb-carousel *ngIf="images">
             <ng-template ngbSlide>
                 <div class="picsum-img-wrapper ">
                     <div class="testimonials">
@@ -46,6 +46,59 @@
                 </div>
 
             </ng-template>
-        </ngb-carousel>
+        </ngb-carousel> -->
+        <div class="container py-5">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide>
+                    <div>
+                        <div class="testimonials">
+                            <p>It’s my 1st time with “Prab builders” and in the starting, I was a little bit worried about their work like whether they do my work with great satisfaction or not. But when I saw them and their teamwork I am impressed and happy
+                                with the quality they offer with great time management. Even they did my work in 3-days advance. It was a great experience with Prab builders and I would love to call them in the future for any other work</p>
+                            <div class="text-field">
+                                <h3 class="mb-0">- Joseph Jebin -</h3>
+                                <p class="mb-0">CUSTOMER</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div>
+                        <div class="testimonials">
+                            <p>They work professionally and deliver all the designs in time, their team is punctual and enthuses towards their work. Their working skills are really great and have excellent commands and knowledge of construction also they
+                                are so passionate about designing and are so cooperative. It’s a great experience with Prab builders.</p>
+                            <div class="text-field">
+                                <h3 class="mb-0">- Deanelle Thompson -</h3>
+                                <p class="mb-0">CUSTOMER</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div>
+                        <div class="testimonials">
+                            <p>I highly recommend you all to at least try the services provided by them at least once. You never feel regret and the team is so polite and do their work professionally, I must say they have great knowledge of all the types
+                                of fittings, kitchen renovations, etc. and how to make old things more pretty and make new things extremely look beautiful they have that ability to win your heart by there work. This is my 4th time, I am taking their services
+                                and I love there work.</p>
+                            <div class="text-field">
+                                <h3 class="mb-0">- Oren Medalsy -</h3>
+                                <p class="mb-0">CUSTOMER</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div>
+                        <div class="testimonials">
+                            <p>You will get everything under one roof like quality, satisfaction, time management, and they offer what they said totally happy and I definitely love to call them in my future work and I recommended to all my friends One thing
+                                is great in them they work professionally and complete their work before the deadlines, very punctual and they are great in their work, really fast & accurate. You must try them ones</p>
+                            <div class="text-field">
+                                <h3 class="mb-0">- Paul Whatmough -</h3>
+                                <p class="mb-0">CUSTOMER</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
     </div>
 </div>

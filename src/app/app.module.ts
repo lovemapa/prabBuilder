@@ -24,6 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './material/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from "ngx-spinner";
+import { ServicesComponent } from './ComponentPackage/services/services.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +41,7 @@ import { NgxSpinnerModule } from "ngx-spinner";
     ContectusComponent,
     TestimonialComponent,
     FooterComponent,
+    ServicesComponent,
 
     // RouterModule
   ],
@@ -51,7 +54,8 @@ import { NgxSpinnerModule } from "ngx-spinner";
     MaterialModule ,
     FormsModule,
     ReactiveFormsModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    CarouselModule
   ],
   providers: [
     { provide: AosToken, useValue: aos },

@@ -1,0 +1,172 @@
+.servicesSection {
+    background: #000000;
+}
+
+.servicesSection h1 {
+    font-size: 30px;
+    color: #009fe3;
+    text-align: center;
+    font-weight: bold;
+}
+
+.servicesSection .datashow {}
+
+.servicesSection .datashow .leftside h3 {
+    color: #009FE3;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.servicesSection .datashow .leftside h1 {
+    color: #FFFFFF;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.servicesSection .datashow .leftside .servicesList {
+    padding: unset;
+}
+
+.servicesSection .datashow .leftside .servicesList li {
+    list-style: none;
+    color: #FFFFFF;
+    padding: 4px 4px
+}
+
+.servicesSection .datashow .leftside p {
+    line-height: 20px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.servicesSection .datashow .imagediv {
+    height: 370px;
+    background: url('../../../assets/imgs/service.jpg');
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+.servicesSection .datashow .leftside .servicesList li span {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
+}
+
+.servicesSection .datashow .leftside .servicesList li:hover {
+    color: #009FE3;
+}
+
+.servicesSection .datashow .leftside .servicesList li span:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #009FE3;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.servicesSection .datashow .leftside .servicesList li span:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media (max-width: 991px) {
+    .cardWapper .customCard i {
+        font-size: 84px;
+    }
+    .cardWapper .customCard h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 !important;
+    }
+    .cardWapper {
+        top: 0;
+        display: flex !important;
+        flex-flow: column;
+    }
+    .servicesSection .datashow {
+        flex-flow: column;
+    }
+    .servicesSection .datashow .leftside {
+        width: 100% !important;
+        padding: 10px;
+    }
+    .servicesSection .datashow .imagediv {
+        width: 100% !important;
+        padding: 10px;
+    }
+    .cardWapper .customCard {
+        width: 100%;
+        text-align: center;
+        background-color: #1A1A1A;
+        border-radius: unset;
+        border-bottom: 2px solid #ffffff;
+        border-right: unset;
+    }
+    .cardWapper .customCard i {
+        font-size: 115px;
+        padding: 16px;
+    }
+    .cardWapper .customCard h2 {
+        font-size: 30px;
+        padding: -11px 10px !important;
+    }
+    .whatweOfferSection .datashow {
+        flex-flow: column;
+        padding: 20px !important;
+    }
+    .whatweOfferSection .datashow .leftside {
+        width: 100% !important;
+    }
+    .whatweOfferSection .datashow .imagediv {
+        width: 100% !important;
+    }
+    .whatweOfferSection .productCounts .bottomcardwapper .customCard {
+        width: 100%;
+    }
+    .whatweOfferSection .productCounts .bottomcardwapper .customCard .mobileviewBox {
+        flex-flow: column;
+    }
+    .whatweOfferSection .productCounts .bottomcardwapper .customCard .mobileviewBox .mobiletext {
+        text-align: center !important;
+    }
+    .whatweOfferSection .productCounts .bottomcardwapper .customCard .mobileviewBox .mobiletext span {
+        padding: 10px 10px;
+    }
+    .whatweOfferSection .productCounts .bottomcardwapper .customCard p {
+        padding: 17px 13px;
+    }
+}
+
+@media (max-width: 565px) {
+    .cardWapper .customCard i {
+        font-size: 78px;
+        padding: 16px;
+    }
+    .cardWapper .customCard h2 {
+        font-size: 20px;
+    }
+    .whatweOfferSection .productCounts .bottomcardwapper .customCard p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .whatweOfferSection .productCounts .bottomcardwapper .customCard i {
+        font-size: 36px;
+    }
+    .whatweOfferSection .productCounts .bottomcardwapper .customCard span {
+        font-size: 36px;
+    }
+}

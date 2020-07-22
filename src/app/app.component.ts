@@ -16,7 +16,7 @@ export class AppComponent {
   constructor(@Inject(AosToken) aos, public router: Router) {
     // CommonMethods.showLog(this.Tag,'Window Resolution :'+window.innerWidth)
     aos.init();
-    aos.init({ disable: 'tablet' });
+     aos.init({ disable: 'mobile' });
   }
 
 

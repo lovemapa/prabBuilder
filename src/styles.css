@@ -10,6 +10,7 @@
 
 * {
     outline: none;
+    /* border: 1px solid #000000; */
 }
 
 html,
@@ -220,7 +221,7 @@ body {
 }
 
 .navbar.navbar-transparent .navbar-brand img {
-    max-width: 150px;
+    max-width: 250px;
     transition: 0.5s all;
 }
 
@@ -340,3 +341,87 @@ button:focus {
         font-size: 22px;
     }
 }
+
+.swal2-styled.swal2-confirm {
+    background-color: #009FE3 !important;
+}
+
+.swal2-styled.swal2-confirm:focus {
+    outline: unset !important;
+    box-shadow: unset !important;
+    border: unset !important;
+}
+
+.owl-prev {
+    position: absolute;
+    left: 0;
+    top: 33%;
+    width: 40px;
+    border-radius: 50% !important;
+    height: 40px;
+    border: 1px solid #009fe3 !important;
+    background: #ffffff !important;
+    color: #009fe3 !important;
+}
+
+.owl-prev:hover {
+    background: #009fe3 !important;
+    color: #ffffff !important;
+}
+
+.owl-next {
+    position: absolute;
+    right: 0;
+    top: 33%;
+    width: 40px;
+    border-radius: 50% !important;
+    height: 40px;
+    border: 1px solid #009fe3 !important;
+    background: #ffffff !important;
+    color: #009fe3 !important;
+}
+
+.owl-next:hover {
+    background: #009fe3 !important;
+    color: #ffffff !important;
+}
+
+.owl-prev i {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.owl-next i {
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+/* .owl-carousel .owl-item {
+    max-width: 320px !important;
+    margin-right: 43px !important;
+}
+
+@media (max-width:776px) {
+    .owl-carousel .owl-item {
+        width: 240px !important;
+        max-width: 240px !important;
+        margin-right: 10px !important;
+    }
+}
+
+@media (max-width:576px) {
+    .owl-carousel .owl-item {
+        width: 240px !important;
+        max-width: 240px !important;
+        margin-right: 10px !important;
+    }
+}
+
+@media (max-width:360px) {
+    .owl-carousel .owl-item {
+        width: 200px important;
+        max-width: 200px !important;
+        margin-right: 10px !important;
+    }
+} */

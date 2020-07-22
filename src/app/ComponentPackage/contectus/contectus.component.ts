@@ -62,14 +62,14 @@ export class ContectusComponent implements OnInit {
         this.contactService.sendMessageDataBase(data).subscribe( responseData =>{
             if(responseData.status == true){
               this.ngxspinner.hide();
-                CommonMethods.showSuccessDialog(this.matsnackBar,responseData.message)
+                CommonMethods.opensweetalert(responseData.message)
               this.firstName="";
                 this.lastName="";
                this.email="";
                this.message="";
             }else{
               this.ngxspinner.hide();
-              CommonMethods.showErrorDialog(this.matsnackBar,responseData.message)
+              CommonMethods.opensweetalertError(responseData.message)
             }
         })
     }
