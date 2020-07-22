@@ -1,19 +1,44 @@
 .testimonialbackground {
     background: #000000;
-    padding: 30px 30px;
+    padding: unset;
     height: 100%;
+    background: url('../../../assets/imgs/testimonialbackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    position: relative;
+    z-index: 0;
+}
+
+.testimonialbackground::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: " ";
+    background: #000000db;
+    z-index: -1;
+    padding: 30px;
+}
+
+.testimonialbackground .testDiv .myblock {
+    padding: 20px;
+    padding-left: 70px;
 }
 
 .testimonialbackground .topheading {
     text-align: center;
     color: #009fe3;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
 .testimonialbackground .bottomLine {
     height: 4px;
-    width: 150px;
+    width: 170px;
     background: #ffffff;
     margin: 0 auto;
+    margin-top: 2px;
 }
 
 .testimonialbackground .picsum-img-wrapper {
@@ -25,39 +50,40 @@
 }
 
 .testimonialbackground .testimonials {
-    /* position: absolute; */
-    /* top: 50%;
-    left: 50%;
-    width: 77%; */
-    background: #009fe3;
+    background: transparent;
     color: #ffffff;
     text-align: center;
     padding: 30px;
     width: 100%;
-    max-width: 320px;
-    border-top-left-radius: 12%;
-    border-bottom-right-radius: 12%;
+    margin: 17px;
+}
+
+.testimonialbackground .testimonials .imageDiv {
+    width: 100px;
+    height: 100px;
+    background: #009fe3;
+    border-radius: 50%;
     margin: 0 auto;
-    /* transform: translate(-50%, -50%);
-    padding: 30px 30px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px; */
+    margin-bottom: 20px;
+    position: relative;
 }
 
-.testimonialbackground .picsum-img-wrapper .testimonials p {
+.testimonialbackground .testimonials .imageDiv span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.testimonialbackground .testimonials p {
     color: #ffffff;
+    line-height: 20px;
+    font-size: 16px;
 }
 
-.testimonialbackground .picsum-img-wrapper .testimonials .text-field {
-    text-align: center;
-    color: #ffffff;
-}
-
-@media (max-width: 767px) {
-    .testimonialbackground .testimonials {
-        max-width: 60%;
-    }
-}
+@media (max-width: 767px) {}
 
 @media (max-width: 565px) {
     .testimonialbackground .picsum-img-wrapper .testimonials {

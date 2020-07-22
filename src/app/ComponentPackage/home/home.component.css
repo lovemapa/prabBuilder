@@ -8,7 +8,7 @@ header {
     position: relative;
     text-align: center;
     flex-flow: row wrap;
-    background-image: url('https://www.dariaconstruction.com/wp-content/uploads/2020/04/jamie-street-105288-unsplash.jpg');
+    background-image: url('../../../assets/imgs/main_background.jpeg');
     background-size: cover;
     z-index: 0;
     text-align: left;
@@ -50,12 +50,23 @@ header .customerContainer {
 }
 
 .banner-content .imagediv {
-    background: url('../../../assets/imgs/slider_Image.jpg');
+    background: url('../../../assets/imgs/ourServices.webp');
     height: 425px;
     width: 50%;
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
+    z-index: 0;
+    position: relative;
+}
+
+.banner-content .imagediv::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: " ";
+    background: #0000006b;
+    z-index: -1;
 }
 
 .banner-content .firstHeading h5 {
@@ -72,6 +83,8 @@ header .customerContainer {
     margin: 0px 0px 0px -100px;
     padding: 1em 1em 1em 1em;
     background-color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+    z-index: 3;
 }
 
 .banner-content .secondHeading h2 {
@@ -86,27 +99,6 @@ header .customerContainer {
 .mobileviewtext {
     display: none;
 }
-
-
-/* @keyframes scale {
-    0% {
-        background: #d6504f;
-        transform: scale(1);
-    }
-    35% {
-        background: #4e040a;
-    }
-    50% {
-        transform: scale(1.04);
-    }
-    70% {
-        background: #333;
-    }
-    100% {
-        background: #d6504f;
-        transform: scale(1);
-    }
-} */
 
 .banner-content .common-btn:hover {
     background: #333;
@@ -177,7 +169,6 @@ p>a {
         text-align: center;
     }
     .banner-content .secondHeading {
-        /* margin: 0px 0px 0px -100px; */
         margin: unset;
         text-align: center;
     }

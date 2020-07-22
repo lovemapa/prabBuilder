@@ -11,9 +11,9 @@
 
 .recentprojectSection .topheading hr {
     margin: unset;
-    margin-top: 4px;
+    margin-top: 2px;
     border-bottom: 3px solid #fff;
-    width: 125px;
+    width: 348px;
 }
 
 .recentprojectSection .cardwapper {
@@ -55,6 +55,11 @@
 @media (max-width: 767px) {
     .recentprojectSection .customCard {
         width: calc(49% - 9px);
+    }
+    .recentprojectSection {
+        overflow: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 }
 

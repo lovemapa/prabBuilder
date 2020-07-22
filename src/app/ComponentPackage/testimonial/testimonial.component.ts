@@ -10,14 +10,12 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class TestimonialComponent implements OnInit {
   customOptions: OwlOptions = {
     loop: false,
-    animateIn:true,
     mouseDrag: true,
-    touchDrag: true,
+    touchDrag: false,
     pullDrag: false, 
     center: true,
     margin: 10,
-    dots: false,
-    navSpeed: 700,
+    dots: true,
     navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
     responsive: {
       0: {
@@ -30,7 +28,7 @@ export class TestimonialComponent implements OnInit {
         items: 1
       },
       940: {
-        items: 2
+        items: 1
       }
     },
     nav: true

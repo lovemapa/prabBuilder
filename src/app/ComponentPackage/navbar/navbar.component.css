@@ -2,13 +2,6 @@
     color: #fff
 }
 
-
-/* .active {
-    color: #d6504f !important;
-    border-bottom: 2px solid #d6504f;
-    transition: 0.3s auto;
-} */
-
 .navbar-nav .nav-link.active {
     color: #009FE3;
 }
@@ -161,7 +154,6 @@
 }
 
 .dropdown-menu-footer a {
-    /* background: #ddd; */
     padding: 12px;
     cursor: pointer;
 }
@@ -227,12 +219,6 @@
         right: 0 !important;
         text-align: start;
     }
-    /* .navbar-collapse {
-      display: none;
-    } */
-    /* .navbar-collapse{
-        display: none;
-    } */
     .mynavbarmobile {
         display: none;
     }
