@@ -59,19 +59,33 @@ export class ContectusComponent implements OnInit {
         data.lastName=this.lastName.trim();
         data.email=this.email.trim();
         data.message=this.message.trim();
-        this.contactService.sendMessageDataBase(data).subscribe( responseData =>{
-            if(responseData.status == true){
+        this.contactService.sendMessageDataBase(data).subscribe(
+          (response) => {                           //Next callback
+            if(response.status == true){
               this.ngxspinner.hide();
-                CommonMethods.opensweetalert(responseData.message)
+                CommonMethods.opensweetalert(response.message)
               this.firstName="";
                 this.lastName="";
                this.email="";
                this.message="";
             }else{
               this.ngxspinner.hide();
-              CommonMethods.opensweetalertError(responseData.message)
+              CommonMethods.opensweetalertError(response.message)
             }
-        })
+          },
+          (error) => {    
+            let errorMessage = '';                          //Error callback
+            if (error.error instanceof ErrorEvent) {
+              // client-side error
+              errorMessage = `Error: ${error.error.message}`;
+          } else {
+              // server-side error
+              errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
+          }
+          this.ngxspinner.hide();
+          CommonMethods.opensweetalertError(errorMessage);
+          }
+        );
     }
   }
 

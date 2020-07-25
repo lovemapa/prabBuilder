@@ -6,11 +6,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ContactusServiceService {
-    //localserver="http://localhost:8081/sendMail"
-    localserver="http://3.14.176.224:8081/sendMail"
-  constructor(public httpClient:HttpClient) { }
+    // localserver="http://localhost:8081/sendMail";
+    localserver="http://3.14.176.224:8081/sendMail";
+  constructor(public httpClient:HttpClient) {}
 
   sendMessageDataBase(sendmessageMOdal:any): Observable<any>{
-    return this.httpClient.post(this.localserver,sendmessageMOdal)
+    return this.httpClient.post(this.localserver,sendmessageMOdal);
   }
 }
