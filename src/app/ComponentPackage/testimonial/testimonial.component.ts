@@ -11,7 +11,7 @@ export class TestimonialComponent implements OnInit {
   customOptions: OwlOptions = {
     loop: false,
     mouseDrag: true,
-    touchDrag: false,
+    touchDrag: true,
     pullDrag: false, 
     center: true,
     margin: 10,
