@@ -7,7 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BlankComponent } from './Layout/blank/blank.component';
 import { FullComponentComponent } from './Layout/full-component/full-component.component';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { AosToken, aos } from './aos';
 import { HomeComponent } from './ComponentPackage/home/home.component';
 import { RouterModule } from '@angular/router';
@@ -60,7 +60,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
   providers: [
     { provide: AosToken, useValue: aos },
     // HashLocationStrategy,
-    { provide: LocationStrategy, useClass: HashLocationStrategy },
+    { provide: LocationStrategy, useClass: PathLocationStrategy },
   ],
   bootstrap: [AppComponent]
 })
