@@ -274,7 +274,7 @@ button:focus {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 341px) {
     .navbar .navbar-nav .nav-item .nav-link {
         font-size: 13px;
         padding: 8px 10px;
